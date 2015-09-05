@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Course: MAD9132 - Android Application Development
+    App: RGB-A Tool
+    @author Thomas Wiegand (wieg0002)
+-->
+<resources>
+
+    <string name="app_name">RVB-A Outil</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="action_about">Thomas Wiegand (wieg0002)</string>
+	<string name="alpha">Transpareny (Alpha)</string>
+	<string name="black">Noir</string>
+	<string name="blue">Bleu</string>
+	<string name="cyan">Cyan</string>
+	<string name="green">Vert</string>
+	<string name="magenta">Magenta</string>
+	<string name="red">Rouge</string>
+	<string name="white">Blanc</string>
+    <string name="yellow">Jaune</string>
+    <string name="current_colour">Couleur Actuelle</string>
+	
+</resources>

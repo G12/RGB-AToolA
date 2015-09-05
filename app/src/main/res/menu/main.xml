@@ -1,0 +1,24 @@
+<!--
+    Course: MAD9132 - Android Application Development
+    App: RGB-A Tool
+    @author Thomas Wiegand (wieg0002)
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.algonquincollege.wieg0002.rgbatool.MainActivity" >
+
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_about"/>
+    <item android:id="@+id/action_black" android:title="@string/black" android:showAsAction="never"></item>
+   	<item android:id="@+id/action_blue" android:title="@string/blue" android:showAsAction="never"></item>
+    <item android:id="@+id/action_cyan" android:title="@string/cyan" android:showAsAction="never"></item>
+    <item android:id="@+id/action_green" android:title="@string/green" android:showAsAction="never"></item>
+    <item android:id="@+id/action_magenta" android:title="@string/magenta" android:showAsAction="never"></item>
+    <item android:id="@+id/action_red" android:title="@string/red" android:showAsAction="never"></item>
+    <item android:id="@+id/action_yellow" android:title="@string/yellow" android:showAsAction="never"></item>
+    <item android:id="@+id/action_white" android:title="@string/white" android:showAsAction="never"></item>
+               
+</menu>

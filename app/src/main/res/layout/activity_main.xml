@@ -1,0 +1,109 @@
+<!--
+    Course: MAD9132 - Android Application Development
+    App: RGB-A Tool
+    @author Thomas Wiegand (wieg0002)
+-->
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.algonquincollege.wieg0002.rgbatool.MainActivity" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/textRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="18dp"
+        android:text="@string/red"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textRed"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/green"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="18dp"
+        android:text="@string/blue"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <NumberPicker
+        android:id="@+id/pickerRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textRed" />
+
+    <NumberPicker
+        android:id="@+id/pickerGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textGreen"
+        android:layout_centerHorizontal="true" />
+
+    <NumberPicker
+        android:id="@+id/pickerBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textBlue" />
+
+    <TextView
+        android:id="@+id/textAlpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/seekBarAlpha"
+        android:layout_alignParentLeft="false"
+        android:layout_below="@+id/pickerRed"
+        android:text="@string/alpha" />
+
+    <SeekBar
+        android:id="@+id/seekBarAlpha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textAlpha"
+        android:layout_centerHorizontal="true"
+        android:max="100" />
+
+    <EditText
+        android:id="@+id/editTextCurrentColour"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/seekBarAlpha"
+        android:layout_below="@+id/seekBarAlpha"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="text"
+        android:text="@string/current_colour" >
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewCurrentColour"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignLeft="@+id/editTextCurrentColour"
+        android:layout_below="@+id/editTextCurrentColour"
+        android:layout_marginTop="18dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+
+</RelativeLayout>
